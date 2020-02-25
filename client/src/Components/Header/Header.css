@@ -1,0 +1,27 @@
+.calendar_header {
+  grid-area: "header";
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 38px;
+  align-content: center;
+  text-align: center;
+}
+
+.calendar_header .month_nav {
+  font-size: 20px;
+  align-self: center;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.calendar_header .month_nav:hover {
+  cursor: pointer;
+}
+
+.calendar_header .prev {
+  float: left;
+}
+
+.calendar_header .next {
+  float: right;
+}

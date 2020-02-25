@@ -1,0 +1,10 @@
+.calendar_days {
+  display: grid;
+  grid-template-columns: repeat(7, 80px);
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.day_of_the_week {
+  align-content: center;
+}

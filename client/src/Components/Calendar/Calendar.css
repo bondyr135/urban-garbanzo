@@ -1,0 +1,18 @@
+#calendar_board {
+  position: relative;
+  width: 560px;
+  height: 590px;
+  background-color: rgb(204, 220, 241);
+  display: grid;
+  grid-template-rows: 55px 35px 500px;
+  grid-template-areas:
+    "header"
+    "days"
+    "cells";
+  border: 2px solid black;
+  border-radius: 1%;
+}
+
+.calendar_header {
+  grid-area: "header";
+}

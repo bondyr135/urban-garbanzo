@@ -1,0 +1,83 @@
+.event_input_container {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  /* height: 333px; */
+  /* height: inherit; */
+}
+
+.list_header {
+  margin-bottom: 15px;
+}
+
+/* The textare */
+.event_input {
+  width: 90%;
+  height: 120px;
+  margin-bottom: 10px;
+  align-self: center;
+  border-radius: 5px;
+  border: 1px solid #555;
+  padding: 5px;
+}
+
+.time_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#event_hour {
+  width: 40%;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+.event_input,
+#event_hour {
+  background-color: rgb(223, 228, 255);
+}
+
+.event_input_btn:enabled {
+  color: white;
+  background-color: rgb(49, 140, 245);
+}
+
+.both_btns {
+  display: inline-block;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.event_input_btn
+/* #event_hour */
+ {
+  width: 50%;
+  align-self: center;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #444;
+  background-color: rgb(195, 218, 245);
+  transition: background-color 0.3s;
+}
+
+.clear_input {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-right: 20px;
+  color: red;
+  border-color: #fff;
+  border: 1px solid #555;
+}
+
+.clear_input:hover {
+  cursor: pointer;
+  border-color: #777;
+}
+
+.clear_input:disabled {
+  cursor: initial;
+}

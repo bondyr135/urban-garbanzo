@@ -1,0 +1,81 @@
+.event_list {
+  width: 100%;
+  height: 90%;
+}
+
+.presentation {
+  border-bottom: 1px solid gray;
+  padding: 10px 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(13, 13, 104);
+  background-color: rgb(149, 183, 247);
+}
+
+.retrieved_list_container {
+  overflow-y: scroll;
+  height: 96%;
+  width: 100%;
+}
+
+.retrieved_list {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.list_item:nth-child(even) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.list_item:last-child {
+  border-bottom: 10px solid black;
+}
+
+.list_item {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.isOutdated {
+  color: rgb(218, 55, 96);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.item_time {
+  display: flex;
+  justify-content: center;
+}
+
+.item_time .time {
+  justify-self: center;
+  margin-right: 15px;
+}
+
+.item_time .trash_icon {
+  align-self: flex-end;
+  color: rgb(255, 88, 88);
+  display: inline;
+  align-self: center;
+}
+
+.trash_icon:hover {
+  cursor: pointer;
+}
+
+.item_title {
+  width: inherit;
+  flex-wrap: wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.item_buffer {
+  height: 1px;
+  background-color: black;
+}
