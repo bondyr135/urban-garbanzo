@@ -95,7 +95,7 @@ const EventInput = props => {
         <button
           onClick={clickToClear}
           className="clear_input"
-          disabled={!props.clickedDay && !text && !time}
+          disabled={!text && !time}
         >
           <FontAwesomeIcon icon={faTimes} />
         </button>
@@ -112,8 +112,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    appendToList: data => dispatch(appendToList(data)),
-    openModal: () => dispatch(openModal())
+    appendToList: data => dispatch(appendToList(data))
   };
 };
 

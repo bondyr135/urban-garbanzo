@@ -5,14 +5,13 @@ import axios from "axios";
 import Calendar from "./Components/Calendar/Calendar";
 import EventInput from "./Components/EventInput/EventInput";
 import EventList from "./Components/EventList/EventList";
-import ModalComponent from "./Components/ModalComponent/ModalComponent";
 
 import "./App.css";
 
 class App extends Component {
   // This function is for slowly, randomly, delete events from the DB
   componentDidMount() {
-    const randomMonthToDelete = Math.floor(Math.random() * 36);
+    const randomMonthToDelete = Math.floor(Math.random() * 48);
 
     axios
       .delete(`/api/delete_whole_month/${randomMonthToDelete}`)
@@ -30,7 +29,6 @@ class App extends Component {
         <main className="main_part">
           <Calendar />
         </main>
-        <ModalComponent />
         <div className="side_part">
           <EventInput append={this.appendToList} />
           <EventList />

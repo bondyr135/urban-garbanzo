@@ -27,21 +27,6 @@ export const setTodayDate = payload => {
   };
 };
 
-//////////////// TOGGLING ERROR MODAL
-export const openModal = () => {
-  console.log("OPEN!");
-  return {
-    type: actions.OPEN_MODAL
-  };
-};
-
-export const closeModal = () => {
-  console.log("CLOSE!");
-  return {
-    type: actions.CLOSE_MODAL
-  };
-};
-
 /////////////// APPENDING NEW EVENT TO LIST
 export const appendToList = payload => {
   return {

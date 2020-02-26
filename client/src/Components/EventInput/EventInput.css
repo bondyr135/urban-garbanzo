@@ -2,8 +2,6 @@
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
-  /* height: 333px; */
-  /* height: inherit; */
 }
 
 .list_header {
@@ -24,6 +22,11 @@
 .time_div {
   display: flex;
   justify-content: space-around;
+}
+
+.time_div label {
+  align-self: center;
+  font-weight: 600;
 }
 
 #event_hour {

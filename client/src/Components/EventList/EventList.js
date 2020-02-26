@@ -126,10 +126,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    openModal: () => dispatch(openModal())
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(EventList);
+export default connect(mapStateToProps)(EventList);

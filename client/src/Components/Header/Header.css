@@ -18,10 +18,20 @@
   cursor: pointer;
 }
 
+.month_nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .calendar_header .prev {
   float: left;
 }
 
 .calendar_header .next {
   float: right;
+}
+
+.next .next {
+  float: right;
+  align-self: flex-end;
 }

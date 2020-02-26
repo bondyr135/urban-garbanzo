@@ -4,7 +4,6 @@ import todayReducer from "./todayReduce";
 import clickedDayReducer from "./clickedDayReducer";
 import displayedMonthReducer from "./displayedMonthReducer";
 import listReducer from "./listReducer";
-import modalReducer from "./modalReducer";
 
 /////////////////////////
 // today: Date
@@ -16,6 +15,5 @@ export default combineReducers({
   todayReducer,
   clickedDayReducer,
   displayedMonthReducer,
-  listReducer,
-  modalReducer
+  listReducer
 });

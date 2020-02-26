@@ -20,12 +20,11 @@ class Calendar extends Component {
   }
 
   // Navigating months: forward and backwards
-  clickToNavMonths({ target: { className } }) {
-    const classAsArray = className.split(" ")[1];
+  clickToNavMonths(direction) {
     const displayedMonth = new Date(this.props.displayedMonth);
     let newMonth;
 
-    switch (classAsArray) {
+    switch (direction) {
       case "prev":
         newMonth = subMonths(displayedMonth, 1);
         break;
@@ -35,7 +34,6 @@ class Calendar extends Component {
       default:
         newMonth = displayedMonth;
     }
-
     this.props.changeMonth(newMonth);
   }
 

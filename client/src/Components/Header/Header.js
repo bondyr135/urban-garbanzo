@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons";
 
 import "./Header.css";
 
@@ -30,17 +33,20 @@ const Header = props => {
     setYear(props.displayedMonth.getFullYear());
   }, [props.displayedMonth]);
 
+  // onClick={props.click}
   return (
     <div className="calendar_header">
-      <i className="month_nav prev" onClick={props.click}>
-        prev
-      </i>
+      <div className="month_nav prev" onClick={() => props.click("prev")}>
+        <span>prev</span>
+        <FontAwesomeIcon className="icon prev" icon={faAngleDoubleLeft} />
+      </div>
 
       {`${MONTHS[month]} ${year}`}
 
-      <i className="month_nav next" onClick={props.click}>
-        next
-      </i>
+      <div className="month_nav next" onClick={() => props.click("next")}>
+        <span>next</span>
+        <FontAwesomeIcon className="icon next" icon={faAngleDoubleRight} />
+      </div>
     </div>
   );
 };
