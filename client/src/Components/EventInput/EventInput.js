@@ -4,7 +4,7 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-import { appendToList, openModal } from "../../actions/actions";
+import { appendToList } from "../../actions/actions";
 
 import "./EventInput.css";
 
@@ -57,7 +57,6 @@ const EventInput = props => {
         alert(
           "Something went wrong while trying to save the event to the server. \n Make sure your internet connection is good."
         );
-        props.openModal();
       });
   };
 

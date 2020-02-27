@@ -5,8 +5,6 @@ import { format, isBefore } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
-import { openModal } from "../../actions/actions";
-
 import "./EventList.css";
 
 // Comp' which is the list of events of occuring
@@ -39,7 +37,6 @@ const EventList = props => {
         alert(
           "We couldn't fetch the Events for the current month. This is usually a network error, make sure your connection is working."
         );
-        // props.openModal();
       });
   };
 
