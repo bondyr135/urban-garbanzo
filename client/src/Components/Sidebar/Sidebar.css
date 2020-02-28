@@ -1,9 +1,0 @@
-.sidebar {
-  display: grid;
-  grid-template-rows: 2fr 3fr;
-  border: 1px solid black;
-}
-
-.events_content {
-  background-color: magenta;
-}

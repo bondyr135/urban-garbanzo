@@ -34,16 +34,27 @@ const Header = props => {
   }, [props.displayedMonth]);
 
   // onClick={props.click}
+
+  const navMonthForward = e => {
+    e.preventDefault();
+    props.navMonth("next");
+  };
+
+  const navMonthBackward = e => {
+    e.preventDefault();
+    props.navMonth("prev");
+  };
+
   return (
     <div className="calendar_header">
-      <div className="month_nav prev" onClick={() => props.click("prev")}>
+      <div className="month_nav prev" onClick={navMonthBackward}>
         <span>prev</span>
         <FontAwesomeIcon className="icon prev" icon={faAngleDoubleLeft} />
       </div>
 
       {`${MONTHS[month]} ${year}`}
 
-      <div className="month_nav next" onClick={() => props.click("next")}>
+      <div className="month_nav next" onClick={navMonthForward}>
         <span>next</span>
         <FontAwesomeIcon className="icon next" icon={faAngleDoubleRight} />
       </div>

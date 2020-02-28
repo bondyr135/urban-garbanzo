@@ -80,15 +80,15 @@ const EventList = props => {
       const elAsDate = new Date(el.date);
       const isElBefore = isBefore(elAsDate, todayAsDate);
       const elID = el._id;
-      let hour = "" + elAsDate.getHours();
+      let hour = `${elAsDate.getHours()}`;
       hour = hour.padStart(2, "0");
-      let minute = "" + elAsDate.getMinutes();
+      let minute = `${elAsDate.getMinutes()}`;
       minute = minute.padStart(2, "0");
       return (
         <li key={elAsDate.toISOString()} id={elID} className="list_item">
           <div className="item_date">{format(elAsDate, "MMM/dd/yyyy")}</div>
           <div className="item_time">
-            <span className="time">{hour + ":" + minute}</span>
+            <span className="time">{`${hour} : ${minute}`}</span>
             <FontAwesomeIcon
               className="trash_icon"
               icon={faTrashAlt}

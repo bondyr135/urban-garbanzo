@@ -16,11 +16,10 @@ class Calendar extends Component {
     this.state = {
       currentDate: new Date()
     };
-    this.clickToNavMonths = this.clickToNavMonths.bind(this);
   }
 
   // Navigating months: forward and backwards
-  clickToNavMonths(direction) {
+  clickToNavMonths = direction => {
     const displayedMonth = new Date(this.props.displayedMonth);
     let newMonth;
 
@@ -35,12 +34,12 @@ class Calendar extends Component {
         newMonth = displayedMonth;
     }
     this.props.changeMonth(newMonth);
-  }
+  };
 
   render() {
     return (
       <div id="calendar_board">
-        <Header className="calendar_header" click={this.clickToNavMonths} />
+        <Header className="calendar_header" navMonth={this.clickToNavMonths} />
         <Days />
         <Cells className="calendar_cells" />
       </div>
