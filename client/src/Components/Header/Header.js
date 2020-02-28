@@ -33,8 +33,6 @@ const Header = props => {
     setYear(props.displayedMonth.getFullYear());
   }, [props.displayedMonth]);
 
-  // onClick={props.click}
-
   const navMonthForward = e => {
     e.preventDefault();
     props.navMonth("next");

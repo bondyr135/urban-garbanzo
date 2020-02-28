@@ -5,14 +5,14 @@ import "./MonthCell.css";
 // Comp' which is a singular square inside of the calendar
 const MonthCell = props => {
   // For clicking a certain day of the month.
-  const clickHandler = ({ target }) => {
+  const clickToChooseDay = ({ target }) => {
     props.clicked(props.date);
   };
   //  ${props.isClicked}
   return (
     <div
       className={`day${props.isDisabled}${props.isToday}`}
-      onClick={clickHandler}
+      onClick={clickToChooseDay}
       id={props.date}
     >
       <span className="date-container">
