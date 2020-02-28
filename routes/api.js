@@ -4,7 +4,7 @@ const router = express.Router();
 
 const EventNote = require("../models/EventModel");
 
-// Sacing the Event the user created
+// Saving the Event the user created
 router.post("/save", async (req, res) => {
   const { date, title, month, year } = req.body;
 
@@ -43,6 +43,7 @@ router.get("/get_events_by_month/:year/:month", (req, res) => {
     });
 });
 
+// Deletes on command a specific note, defined by _id given by mongoose
 router.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
 
@@ -60,7 +61,7 @@ router.delete("/delete/:id", (req, res) => {
     });
 });
 
-// ONLY for cleaning up the DB, so it won't  fill-up
+// ONLY for randomly cleaning up the DB, so it won't  fill-up
 router.delete("/delete_whole_month/:month", async (req, res) => {
   const { month } = req.params;
 

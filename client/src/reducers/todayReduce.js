@@ -4,6 +4,7 @@ const initialState = {
   today: new Date()
 };
 
+// Holds today as a date
 const todayReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_TODAY_DATE:

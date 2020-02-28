@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 //MONGOOSE SCHEMA
+// The Model for the Events
 const Schema = mongoose.Schema;
 const EventSchema = new Schema({
   title: {
