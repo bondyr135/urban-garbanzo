@@ -7,7 +7,7 @@
   background-color: #fff;
 }
 
-.main_part {
+.main-part {
   position: initial;
   padding-top: 20px;
   height: 100%;
@@ -17,7 +17,7 @@
   border-right: 1px solid black;
 }
 
-.side_part {
+.side-part {
   display: grid;
   height: 610px;
   max-height: 610px;

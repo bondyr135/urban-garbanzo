@@ -1,4 +1,4 @@
-.calendar_header {
+.calendar-header {
   grid-area: "header";
   align-items: center;
   border-bottom: 1px solid black;
@@ -7,27 +7,27 @@
   text-align: center;
 }
 
-.calendar_header .month_nav {
+.calendar-header .month-nav {
   font-size: 20px;
   align-self: center;
   height: 100%;
   padding: 0px 10px;
 }
 
-.calendar_header .month_nav:hover {
+.calendar-header .month-nav:hover {
   cursor: pointer;
 }
 
-.month_nav {
+.month-nav {
   display: flex;
   flex-direction: column;
 }
 
-.calendar_header .prev {
+.calendar-header .prev {
   float: left;
 }
 
-.calendar_header .next {
+.calendar-header .next {
   float: right;
 }
 

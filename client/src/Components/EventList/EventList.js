@@ -85,17 +85,17 @@ const EventList = props => {
       let minute = `${elAsDate.getMinutes()}`;
       minute = minute.padStart(2, "0");
       return (
-        <li key={elAsDate.toISOString()} id={elID} className="list_item">
-          <div className="item_date">{format(elAsDate, "MMM/dd/yyyy")}</div>
-          <div className="item_time">
+        <li key={elAsDate.toISOString()} id={elID} className="list-item">
+          <div className="item-date">{format(elAsDate, "MMM/dd/yyyy")}</div>
+          <div className="item-time">
             <span className="time">{`${hour} : ${minute}`}</span>
             <FontAwesomeIcon
-              className="trash_icon"
+              className="trash-icon"
               icon={faTrashAlt}
               onClick={deleteEvent}
             />
           </div>
-          <div className="item_title">
+          <div className="item-title">
             {isElBefore && <span className="isOutdated">OUTDATED: </span>}
             {el.title}
           </div>
@@ -106,10 +106,10 @@ const EventList = props => {
   };
 
   return (
-    <div className="event_list">
+    <div className="event-list">
       <div className="presentation">This month's events:</div>
-      <div className="retrieved_list_container">
-        <ul className="retrieved_list">{actualList()}</ul>
+      <div className="retrieved-list-container">
+        <ul className="retrieved-list">{actualList()}</ul>
       </div>
     </div>
   );

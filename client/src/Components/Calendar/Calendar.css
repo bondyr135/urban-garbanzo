@@ -1,4 +1,4 @@
-#calendar_board {
+#calendar-board {
   position: relative;
   width: 560px;
   height: 590px;
@@ -13,6 +13,6 @@
   border-radius: 1%;
 }
 
-.calendar_header {
+.calendar-header {
   grid-area: "header";
 }

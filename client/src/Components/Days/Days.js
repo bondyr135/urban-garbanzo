@@ -15,10 +15,10 @@ const DAYS = [
 // Comp' holding the names of the days of the week
 const Days = props => {
   return (
-    <div className="calendar_days">
+    <div className="calendar-days">
       {DAYS.map(day => {
         return (
-          <div className="day_of_the_week" key={day}>
+          <div className="day-of-the-week" key={day}>
             {day}
           </div>
         );

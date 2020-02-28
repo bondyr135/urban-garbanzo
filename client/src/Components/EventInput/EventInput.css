@@ -1,15 +1,15 @@
-.event_input_container {
+.event-input-container {
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
 }
 
-.list_header {
+.list-header {
   margin-bottom: 15px;
 }
 
 /* The textare */
-.event_input {
+.event-input {
   width: 90%;
   height: 120px;
   margin-bottom: 10px;
@@ -19,40 +19,40 @@
   padding: 5px;
 }
 
-.time_div {
+.time-div {
   display: flex;
   justify-content: space-around;
 }
 
-.time_div label {
+.time-div label {
   align-self: center;
   font-weight: 600;
 }
 
-#event_hour {
+#event-hour {
   width: 40%;
   padding: 5px 0px;
   text-align: center;
   border-radius: 5px;
   border: 1px solid #555;
 }
-.event_input,
-#event_hour {
+.event-input,
+#event-hour {
   background-color: rgb(223, 228, 255);
 }
 
-.event_input_btn:enabled {
+.event-input-btn:enabled {
   color: white;
   background-color: rgb(49, 140, 245);
 }
 
-.both_btns {
+.both-btns {
   display: inline-block;
   height: 40px;
   margin-top: 10px;
 }
 
-.event_input_btn
+.event-input-btn
 /* #event_hour */
  {
   width: 50%;
@@ -65,7 +65,7 @@
   transition: background-color 0.3s;
 }
 
-.clear_input {
+.clear-input {
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -76,11 +76,11 @@
   border: 1px solid #555;
 }
 
-.clear_input:hover {
+.clear-input:hover {
   cursor: pointer;
   border-color: #777;
 }
 
-.clear_input:disabled {
+.clear-input:disabled {
   cursor: initial;
 }

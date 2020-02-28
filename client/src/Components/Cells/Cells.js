@@ -42,7 +42,7 @@ const Cells = props => {
           props.clickedDay === format(day, "MMM/dd/yyyy") ? " clicked" : "";
         const isToday =
           format(day, "MMM/dd/yyyy") === format(props.today, "MMM/dd/yyyy")
-            ? " its_today"
+            ? " its-today"
             : "";
         formattedDate = format(day, dateFormat);
         days.push(
@@ -82,7 +82,7 @@ const Cells = props => {
     }
   };
 
-  return <div className="calendar_cells">{renderDays()}</div>;
+  return <div className="calendar-cells">{renderDays()}</div>;
 };
 
 const mapStateToProps = state => {

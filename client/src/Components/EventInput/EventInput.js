@@ -61,31 +61,31 @@ const EventInput = props => {
   };
 
   return (
-    <div className="event_input_container">
-      <h3 className="list_header">
+    <div className="event-input-container">
+      <h3 className="list-header">
         Add an event {props.clickedDay ? props.clickedDay : "for..."}
       </h3>
       <textarea
-        className="event_input"
+        className="event-input"
         placeholder="What do you need to remember?"
         onChange={clientWriting}
         value={text}
         maxLength="55"
       ></textarea>
-      <div className="time_div">
-        <label htmlFor="event_hour">Select event's time:</label>
+      <div className="time-div">
+        <label htmlFor="event-hour">Select event's time:</label>
         <input
           type="time"
-          id="event_hour"
-          name="event_hour"
+          id="event-hour"
+          name="event-hour"
           step="900"
           value={time}
           onChange={choosingTime}
         ></input>
       </div>
-      <div className="both_btns">
+      <div className="both-btns">
         <button
-          className="event_input_btn"
+          className="event-input-btn"
           disabled={!props.clickedDay || !text || !time}
           onClick={submittingEvent}
         >
@@ -93,7 +93,7 @@ const EventInput = props => {
         </button>
         <button
           onClick={clickToClear}
-          className="clear_input"
+          className="clear-input"
           disabled={!text && !time}
         >
           <FontAwesomeIcon icon={faTimes} />

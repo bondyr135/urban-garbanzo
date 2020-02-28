@@ -15,8 +15,8 @@ const MonthCell = props => {
       onClick={clickHandler}
       id={props.date}
     >
-      <span className="date_container">
-        <div className={`date_background${props.isClicked}`}>{props.day}</div>
+      <span className="date-container">
+        <div className={`date-background${props.isClicked}`}>{props.day}</div>
       </span>
     </div>
   );

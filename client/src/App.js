@@ -26,10 +26,10 @@ class App extends Component {
   render() {
     return (
       <div id="App">
-        <main className="main_part">
+        <main className="main-part">
           <Calendar />
         </main>
-        <div className="side_part">
+        <div className="side-part">
           <EventInput append={this.appendToList} />
           <EventList />
         </div>

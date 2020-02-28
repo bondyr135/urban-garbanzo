@@ -38,10 +38,10 @@ class Calendar extends Component {
 
   render() {
     return (
-      <div id="calendar_board">
-        <Header className="calendar_header" navMonth={this.clickToNavMonths} />
+      <div id="calendar-board">
+        <Header className="calendar-header" navMonth={this.clickToNavMonths} />
         <Days />
-        <Cells className="calendar_cells" />
+        <Cells className="calendar-cells" />
       </div>
     );
   }

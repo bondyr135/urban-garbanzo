@@ -46,15 +46,15 @@ const Header = props => {
   };
 
   return (
-    <div className="calendar_header">
-      <div className="month_nav prev" onClick={navMonthBackward}>
+    <div className="calendar-header">
+      <div className="month-nav prev" onClick={navMonthBackward}>
         <span>prev</span>
         <FontAwesomeIcon className="icon prev" icon={faAngleDoubleLeft} />
       </div>
 
       {`${MONTHS[month]} ${year}`}
 
-      <div className="month_nav next" onClick={navMonthForward}>
+      <div className="month-nav next" onClick={navMonthForward}>
         <span>next</span>
         <FontAwesomeIcon className="icon next" icon={faAngleDoubleRight} />
       </div>
