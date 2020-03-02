@@ -3,7 +3,7 @@ import { combineReducers } from "redux";
 import todayReducer from "./todayReduce";
 import clickedDayReducer from "./clickedDayReducer";
 import displayedMonthReducer from "./displayedMonthReducer";
-import listReducer from "./listReducer";
+import appendReducer from "./appendReducer";
 
 /////////////////////////
 // today: Date
@@ -15,5 +15,5 @@ export default combineReducers({
   todayReducer,
   clickedDayReducer,
   displayedMonthReducer,
-  listReducer
+  appendReducer
 });

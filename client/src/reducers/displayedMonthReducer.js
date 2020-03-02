@@ -9,7 +9,6 @@ const displayedMonthReducer = (state = initialState, action) => {
   switch (action.type) {
     case "CHANGE_DISPLAYED_MONTH":
       const month = new Date(action.payload);
-      state.displayedMonth.setMonth(month);
 
       return {
         displayedMonth: month

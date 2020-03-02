@@ -119,7 +119,7 @@ const mapStateToProps = state => {
   return {
     displayedMonth: state.displayedMonthReducer.displayedMonth,
     today: state.todayReducer.today,
-    appendable: state.listReducer.appendable
+    appendable: state.appendReducer.appendable
   };
 };
 

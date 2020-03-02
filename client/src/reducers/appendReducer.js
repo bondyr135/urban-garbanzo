@@ -8,7 +8,7 @@ const initialState = {
 // if the event was saved to server- holds it here instead of making another call to the server;
 // appending it LOCALLY to the list
 
-const listReducer = (state = initialState, action) => {
+const appendReducer = (state = initialState, action) => {
   switch (action.type) {
     case APPEND_TO_LIST:
       return {
@@ -19,4 +19,4 @@ const listReducer = (state = initialState, action) => {
   }
 };
 
-export default listReducer;
+export default appendReducer;
