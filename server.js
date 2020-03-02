@@ -8,8 +8,6 @@ const PORT = process.env.PORT || 8080;
 const routes = require("./routes/api");
 const MONGODB_URI = require("./mongo_utils");
 
-// MONGODB_URI =
-//   "mongodb+srv://bondyr:httprequest@cluster0-ln3ui.mongodb.net/test?retryWrites=true&w=majority";
 mongoose
   .connect(MONGODB_URI || "mongodb://localhost/calendar", {
     useNewUrlParser: true,
