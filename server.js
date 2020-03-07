@@ -6,10 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 const routes = require("./routes/api");
-const MONGODB_URI = require("./mongo_utils");
+// const MONGODB_URI = require("./mongo_utils");
 
 mongoose
-  .connect(MONGODB_URI || "mongodb://localhost/calendar", {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/calendar", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
