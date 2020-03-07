@@ -7,6 +7,5 @@ Events are saved to DB (local, so no if downloaded), and retrieved from DB accor
 Using: React, Express, MongoDB, Node, Mongoose, axios, Redux.
 For running:
 - Download
-- Inside _client_ folder run `npm install`
 - Inside _sever_ forlder run `npm install`
 - Run `npm run dev`
